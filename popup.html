@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 250px;
+        padding: 15px;
+        font-family: sans-serif;
+      }
+      h2 {
+        color: #6a11cb;
+        margin-top: 0;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      select,
+      input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+      }
+      button {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        color: white;
+        border: none;
+        padding: 8px;
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>⚙️ Sharthi Settings</h2>
+
+    <label>Preferred Language</label>
+    <select id="language">
+      <option value="English">English</option>
+      <option value="Hindi">Hindi (हिंदी)</option>
+      <option value="Gujarati">Gujarati (ગુજરાતી)</option>
+    </select>
+
+    <label>AI Model</label>
+    <select id="provider">
+      <option value="Gemini">Google Gemini 2.0</option>
+      <option value="GPT4">OpenAI GPT-4o</option>
+      <option value="Sonar">Perplexity Sonar</option>
+    </select>
+
+    <label>API Key (Optional for Demo)</label>
+    <input type="password" id="apiKey" placeholder="Enter API Key" />
+
+    <button id="save">Save Settings</button>
+    <p id="status" style="color: green; font-size: 12px; display: none">
+      Saved!
+    </p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
